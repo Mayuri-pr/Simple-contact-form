@@ -26,7 +26,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Step 5: Execute query and check for success
     if ($conn->query($query) === TRUE) {
-        echo "Message is sent successfully!";
+        // Redirect to home page after successful submission
+        header("Location: index.php"); // Adjust if your home page is elsewhere
+        exit();
     } else {
         echo "Error: " . $query . "<br>" . $conn->error;
     }

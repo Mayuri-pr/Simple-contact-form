@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP Dynamic Website</title>
     <link rel="stylesheet" href="css/style.css"/>
+    <style>
+        /* Adding smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
     <header class="main">
@@ -14,20 +20,20 @@
             </a>
 
             <ul class="menu">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="main-heading">
-            <h1>Create Prespectives With Virtual Reality</h1>
+        <div class="main-heading" id="home">
+            <h1>Create Perspectives With Virtual Reality</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint provident consectetur ducimus. Blanditiis, culpa!</p>
-            <a class="main-btn" href="#">Contact</a>
+            <a class="main-btn" href="#contact">Contact</a>
         </div>
     </header>
 
-    <section class="features">
+    <section class="features" id="features">
         <div class="feature-container">
 
             <div class="feature-box">
@@ -65,7 +71,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-img">
             <img src="images/about.jpg">
         </div>
@@ -76,7 +82,7 @@
         </div>
     </section>
 
-    <footer class="contact">
+    <footer class="contact" id="contact">
         <div class="contact-heading">
             <h1>Contact Us</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
